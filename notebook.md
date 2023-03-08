@@ -20,3 +20,15 @@
       "last 1 safari version"
     ]
   }
+
+3. react默认配置的是sass预编译语言,但是我想用less,所以我要安装less`yarn add less less-loader@8`最新版本不支持,所以用8版本.
+同时也卸载sass `yarn remove sass-loader`
+
+4. 如果想通过修改环境变量的方式修改域名和端口号,首先要安装一个插件`yarn add cross-env`
+
+5. /* 多es6内置api做兼容处理 */ 在src/index.js入口文件中添加
+import 'react-app-polyfill/ie9'
+import 'react-app-polyfill/ie11'
+import 'react-app-polyfill/stable'
+
+6. 跨域代理   `yarn add http-proxy-middleware`
