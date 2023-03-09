@@ -4,10 +4,11 @@
 // import 'react-app-polyfill/stable'
 // 暂时不用处理兼容
 
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from "react";// react语法核心
+import ReactDOM from "react-dom/client";// 构建html的核心
 import '@/index.less'
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <div>学习react</div>
